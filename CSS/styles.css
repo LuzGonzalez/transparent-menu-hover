@@ -1,0 +1,108 @@
+body
+{
+    background-image: url(../SRC/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav
+{
+    margin: 50px auto;
+    width: 590px;
+}
+
+li
+{
+    list-style: none;
+    background: linear-gradient(rgba(0, 138, 161, 0.6)85%,
+    rgba(255,255,255,0.5) 100%);
+    float: left;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-top: 1px solid rgba(200,200,255,0.5);
+    border-bottom: 1px solid rgba(50,50,50,0.4);
+}
+
+li:first-child
+{
+    border-radius:5px 0 0 5px;
+}
+
+li:last-child
+{
+    border-radius:0 5px 5px 0;
+}
+
+
+a
+{
+    display: block;
+    padding: 10px 13px;
+    font-size: 26px;
+    text-decoration: none;
+    border-radius: 6px;
+    position: relative;
+    top: 0;
+    color: #FFF;
+    transition: all 0.4s;
+}
+
+li:hover a
+{
+    top: -20px;
+    color:#1b8e13;
+    background-color: #FFF;
+    box-shadow: 0 0 5px rgba(255,255,255,0.7);
+    transition: all 0.4s;
+}
+
+li a:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 42%;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 5px 5px 0 5px;
+    transition: all 0.4s;
+}
+
+.nav-menu
+{
+    width: 796px;
+    position: absolute;
+    top: 38%;
+    left: 21%;
+}
+
+.nav-menu a
+{
+    font-family: 'Raleway', sans-serif;;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.nav-menu  li
+{
+    border-right: 1px solid rgba(200,200,255,0.5);
+    border-left:  1px solid rgba(40,40,40,0.2);
+}
+
+.selected
+{
+    top: -20px;
+    color:#1b8e13;
+    background-color: #FFF;
+    box-shadow: 0 0 5px 0 rgba(255,255,255,0.7);
+    transition: all 0.4s;
+}
+
+.selected::after
+{
+    border-color:white transparent transparent transparent;
+    transition: all 0.4s;
+}
